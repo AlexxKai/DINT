@@ -10,94 +10,261 @@
     <meta name="author" content="Alex Urueña">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <!--font-family: 'Black Ops One', cursive;-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Materialize Icons-->
 </head>
 
-<body>
+<body style="font-family: 'Alex Brush', cursive;">
     <header>
-
-        <nav>
-            <div>
-
-            </div>
-            <div>
-
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a style="color: #FFFFFF;" href="./index.html"><img src="./images/fantasma.png" alt="ghost" width="30"
+                        height="24" class="d-inline-block align-text-top">Unit 0</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="./unit1.html">Unit 1</a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./unit2.html">Unit 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./unit3.html">Unit 3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./unit4.html">Unit 4</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./unit5.html">Unit 5</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./unit6.html">Unit 6</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
-
-    <section>
+    <section style="background-image: url(./img/castillo.jpg)" ;>
         <article>
-            <div>
-
+            <div class="container bg-light">
+                <!--accordion start-->
+                <div class="accordion" id="accordionExample">
+                    <h1>Introduction</h1>
+                    <br>
+                    <!--First item accordion-->
+                    <div class="accordion-item">
+                        <!--Button-->
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button btn btn-danger" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Documentation
+                            </button>
+                        </h2>
+                        <!--Content-->
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body" style="background-color: rgb(173, 51, 51);">
+                                <!--Row into the accordion body-->
+                                <div class="row">
+                                        <!--Card-->
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li>New iPhone Animations:<a
+                                                            href="https://www.creativebloq.com/news/ios-17-animations?utm_source=tldrdesign"
+                                                            target="_blank">Apple's joyful iOS 17 animations mesmerise
+                                                            iPhone fans</a></li>
+                                                    <li>New Fitbit App Redesign:<a
+                                                            href="https://techcrunch.com/2023/09/19/the-new-fitbit-app-is-now-available/?utm_source=tldrdesign"
+                                                            target="_blank">The new Fitbit app is now available TechCrunch</a></li>
+                                                    <li>Paint and layers:<a href="https://www.itsnicethat.com/news/microsoft-paint-update-digital-190923"
+                                                            target="_blank">https://www.itsnicethat.com/news/microsoft-paint-update-digital-190923</a>
+                                                    </li>
+                                                    <li>DALL-E 3:<a href="https://openai.com/dall-e-3"
+                                                            target="_blank">https://openai.com/dall-e-3</a></li>
+                                                    <br>
+                                                    <li>DallE 3 free on Bing:<a
+                                                            href="https://www.genbeta.com/a-fondo/he-probado-dall-e-3-para-generar-imagenes-pagar-chatgpt-plus-bing-chat-censura-a-ciertos-nombres-me-sorprendio"
+                                                            target="_blank">DALL-E 3 llega a Bing Chat de manera
+                                                            gratuita sin pasar por
+                                                            ChatGPT Plus. Generar
+                                                            imágenes fotorrealistas nunca había sido tan fácil</a></li>
+                                                    <li>Another IA generator:<a
+                                                            href="https://twitter.com/matiass/status/1704889065445703784?t=pK9md8wsCIzclpRvcQ0Ngg&s=19"
+                                                            target="_blank">https://twitter.com/matiass/status/1704889065445703784?t=pK9md8wsCIzclpRvcQ0Ngg&s=19</a>
+                                                    </li>
+                                                    <li>Nike IA:<a
+                                                            href="https://x.com/matiass/status/1704776155503477033?t=58j-dSzrdApOyvrKojA8_g&s=09"
+                                                            target="_blank">https://x.com/matiass/status/1704776155503477033?t=58j-dSzrdApOyvrKojA8_g&s=09</a>
+                                                    </li>
+                                                    <li>FlowerJS:<a href="https://github.com/jirotubuyaki/FlowerJS"
+                                                            target="_blank">https://github.com/jirotubuyaki/FlowerJS</a>
+                                                    </li>
+                                                    <li>Facebook Redesign:<a
+                                                            href="https://www.itsnicethat.com/news/facebook-rebrand-graphic-design-210923"
+                                                            target="_blank">https://www.itsnicethat.com/news/facebook-rebrand-graphic-design-210923</a>
+                                                    </li>
+                                                    <li>Design for Social Media:<a
+                                                            href="https://weandthecolor.com/designing-for-social-media-15-tips-for-eye-catching-posts/180474"
+                                                            target="_blank">https://weandthecolor.com/designing-for-social-media-15-tips-for-eye-catching-posts/180474</a>
+                                                    </li>
+                                                    <li>Design for older people:<a
+                                                            href="https://uxpsychology.substack.com/p/designing-digital-products-for-older"
+                                                            target="_blank">https://uxpsychology.substack.com/p/designing-digital-products-for-older</a>
+                                                    </li>
+                                                    <br>
+                                                    <li>UI Components AI: <a href="https://clone-ui.design/"
+                                                            target="_blank">CLONE UI | design</a>
+                                                    </li>
+                                                    <li>Learn by doing:<a
+                                                            href="https://www.marcandrew.me/ditch-the-tutorials-a-guide-to-mastering-ui-design-by-doing/"
+                                                            target="_blank">https://www.marcandrew.me/ditch-the-tutorials-a-guide-to-mastering-ui-design-by-doing/</a>
+                                                    </li>
+                                                    <li>UI Guides:<a href="https://www.marcandrew.me/guides/"
+                                                            target="_blank">https://www.marcandrew.me/guides/</a>
+                                                    </li>
+                                                    <li>Japanese web design:<a
+                                                            href="https://bootcamp.uxdesign.cc/6-web-design-styles-that-are-uniquely-japan-1ba67537849"
+                                                            target="_blank">https://bootcamp.uxdesign.cc/6-web-design-styles-that-are-uniquely-japan-1ba67537849</a>
+                                                    </li>
+                                                    <li>Typography trends:<a
+                                                            href="https://uxplanet.org/typography-trends-in-web-design-2023-98516f82f5d6"
+                                                            target="_blank">https://uxplanet.org/typography-trends-in-web-design-2023-98516f82f5d6</a>
+                                                    </li>
+                                                </ul> <a class="btn" data-bs-toggle="collapse" href="#godric"
+                                                    role="button" aria-expanded="false"
+                                                    aria-controls="multiCollapseExample1"
+                                                    style="color: #FFFFFF; background-color: rgb(173, 51, 51);">Emblem</a>
+                                                <div class="collapse multi-collapse" id="godric">
+                                                    <iframe src="./img/gryffindor.jpg" alt="gryffindor shield"
+                                                        width="250" height="300" style="border:0;" allowfullscreen=""
+                                                        loading="lazy"
+                                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Close card-->
+                                </div>
+                                <!--Close row-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--Close first item accordion-->
+                    <!--Second item accordion-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button btn btn-primary collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                Assignments
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body" style="background-color: #235cd4;">
+                                <!--Row into the accordion body-->
+                                <div class="row">
+                                    <!--First col-->
+                                    <div class="col-sm-6">
+                                        <!--Card-->
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Rowena Ravenclaw</h5>
+                                                <p class="card-text">This is the emblem of Ravenclaw house.</p>
+                                                <a class="btn" data-bs-toggle="collapse" href="#rowena" role="button"
+                                                    aria-expanded="false" aria-controls="multiCollapseExample1"
+                                                    style="color: #FFFFFF; background-color: #235cd4;">Emblem</a>
+                                                <div class="collapse multi-collapse" id="rowena">
+                                                    <iframe src="./img/ravenclaw.jpg" alt="ravenclaw shield" width="250"
+                                                        height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Close card-->
+                                    </div>
+                                    <!--Close col-->
+                                </div>
+                                <!--Close row-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--Third item accordion-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button btn btn-success collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                Tools
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body" style="background-color: #1a6e3d;">
+                                <!--Row into the accordion body-->
+                                <div class="row">
+                                    <!--First col-->
+                                    <div class="col-sm-6">
+                                        <!--Card-->
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Salazar Slytherin</h5>
+                                                <p class="card-text">This is the emblem of Slytherin house.</p>
+                                                <a class="btn" data-bs-toggle="collapse" href="#salazar" role="button"
+                                                    aria-expanded="false" aria-controls="multiCollapseExample1"
+                                                    style="color: #FFFFFF; background-color: #1a6e3d;">Emblem</a>
+                                                <div class="collapse multi-collapse" id="salazar">
+                                                    <iframe src="./img/slytherin.jpg" alt="slytherin shield" width="250"
+                                                        height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Close card-->
+                                    </div>
+                                    <!--Close col-->
+                                </div>
+                                <!--Close row-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div>
-
+            <br>
             </div>
-
-            <div>
-
-            </div>
-        </article>
-
-        <article>
-            <div>
-
-            </div>
-
-            <div>
-
-            </div>
-
-            <div>
-
-            </div>
-        </article>
-
-        <article>
-            <div>
-
-            </div>
-
-            <div>
-
-            </div>
-
-            <div>
-
-            </div>
-        </article>
-
-        <article>
-            <div>
-
-            </div>
-
-            <div>
-
-            </div>
-
-            <div>
-
-            </div>
+            <br>
         </article>
     </section>
 
-    <footer>
-        <div>
-
-        </div>
-        <div>
-
-        </div>
-        <div>
-
+    <footer style="background-color: #2c2c2c;">
+        <div class="d-flex justify-content-center">
+            <i class="material-icons" style="color: #FFFFFF; text-align: center;padding-top: 1%;">copyright</i>
+            <i class="material-icons" style="color: #FFFFFF; text-align: center;padding-top: 1%;">attribution</i>
+            <h5 style="color: #FFFFFF; text-align: center;padding: 1%; font-family: 'Black Ops One', cursive;">Alex
+                Urueña</h5>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
