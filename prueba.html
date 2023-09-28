@@ -1,0 +1,440 @@
+<DOCTYPE html>
+    <html lang="auto" style="height: 100%;" class>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Document</title>
+        <style>
+            h1 {
+                text-align: center;
+            }
+
+            body {
+                background-image: url('https://images3.alphacoders.com/587/587453.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+        </style>
+
+        <script>(function () {
+                (function injection() {
+                    var pageLang = 'auto';
+                    var userLang = 'es';
+
+                    var uid = '1E07F158C6FA4460B352973E9693B329';
+                    var teId = 'TE_' + uid;
+                    var cbId = 'TECB_' + uid;
+
+                    function show() {
+                        window.setTimeout(function () {
+                            window[teId].showBanner(true);
+                        }, 10);
+                    }
+
+                    function newElem() {
+                        var elem = new google.translate.TranslateElement({
+                            autoDisplay: false,
+                            floatPosition: 0,
+                            multilanguagePage: true,
+                            pageLanguage: pageLang
+                        });
+                        return elem;
+                    }
+
+                    if (window[teId]) {
+                        show();
+                    } else {
+                        if (!window.google || !google.translate ||
+                            !google.translate.TranslateElement) {
+                            if (!window[cbId]) {
+                                window[cbId] = function () {
+                                    window[teId] = newElem();
+                                    show();
+                                };
+                            }
+                            let ttPolicy = { createScriptURL: s => s };
+                            if (typeof trustedTypes != 'undefined') {
+                                ttPolicy = trustedTypes.createPolicy('gtx', ttPolicy);
+                            }
+                            var s = document.createElement('script');
+                            // We couldn't use safedom because this function is stringified and then
+                            // passed to executeScript in main.js.
+                            s.src = ttPolicy.createScriptURL(
+                                'https://translate.google.com/translate_a/element.js?cb=' +
+                                encodeURIComponent(cbId) + '&client=tee&hl=' + userLang + '&nsc=1');
+                            document.getElementsByTagName('head')[0].appendChild(s);
+                        }
+                    }
+                });
+            });</script>
+        <script
+            src="https://translate.google.com/translate_a/element.js?cb=TECB_1E07F158C6FA4460B352973E9693B329&amp;client=tee&amp;hl=es&amp;nsc=1"></script>
+        <link type="text/css" rel="stylesheet" charset="UTF-8"
+            href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.qhDXWpKopYk.L.W.O/d=0/rs=AN8SPfp0QXhhaDDdjg_LgcSqoZiPEzC1tw/m=el_main_css">
+        <script type="text/javascript" charset="UTF-8"
+            src="https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.es.9vBqBUf-SEc.O/d=1/exm=el_conf/ed=1/rs=AN8SPfqFOmZs9tWBwvW8cRW4DcVWtgggbg/m=el_main"></script>
+    </head>
+
+    <body style="position: relative; min-height: 100%; top: 0px;">
+        <div class="skiptranslate" style="display: none;"><iframe id=":0.container"
+                class="VIpgJd-ZVi9od-ORHb-OEVmcd skiptranslate" frameborder="0" src="#"
+                style="visibility:visible"></iframe></div>
+
+        <h1>HTML Tips</h1>
+
+        <h2 style="color:#FFFFFF">1. The `loading=lazy` attribute</h2>
+
+        <p>Performance tip. You can use the loading=lazy attribute to defer the loading of the image until the user
+            scrolls
+            to
+            them.</p>
+
+        <img src="image.jpg" loading="lazy" alt="Text that appears when the image cant be loaded">
+
+        <h2 style="color:#FFFFFF">2. Email, call, and SMS links:</h2>
+
+        <p>Send us an email<a href="mailto:{unai.bensan@educa.jcyl.es}?subject={subject}&amp;body={content}">✉️</a></p>
+
+        <p>Call us<a href="tel:{721092674}">📞</a></p>
+
+        <p>Send us a message<a href="sms:{827948712}?body={content}">💬</a></p>
+
+        <h2 style="color:#FFFFFF">3. Ordered lists `start` attribute.</h2>
+
+        <div class="paragraph">
+            <p>Use the <code>start</code> attribute to change the starting point for your ordered lists.</p>
+        </div>
+
+
+        <ol start="11">
+            <li>DIW</li>
+            <li>DWES</li>
+            <li>DWEC</li>
+            <li>EIE</li>
+            <li>Deployment</li>
+        </ol>
+        <h2 style="color:#FFFFFF">4. The `meter` element</h2>
+
+        <p>You can use the meter element to display quantities. No JavaScript/CSS needed.</p>
+
+        <label for="value1">Malbolge</label>
+        <meter id="value1" min="0" max="100" low="30" high="75" optimum="80" value="25"></meter>
+
+        <label for="value2">Brainf*ck</label>
+        <meter id="value2" min="0" max="100" low="30" high="75" optimum="80" value="50"></meter>
+
+        <label for="value3">HTML</label>
+        <meter id="value3" min="0" max="100" low="30" high="75" optimum="80" value="80"></meter>
+
+        <h2 style="color:#FFFFFF">5. HTML Native Search</h2>
+
+        <div class="wrapper">
+            <h3>
+                Select your favourite assignature
+            </h3>
+
+            <input list="items">
+
+            <datalist id="items">
+                <option value="DIW">
+                </option>
+                <option value="DWEC">
+                </option>
+                <option value="DWES">
+                </option>
+                <option value="EIE">
+                </option>
+                <option value="Deployment">
+                </option>
+            </datalist>
+        </div>
+
+        <h2 style="color:#FFFFFF">6. Fieldset Element</h2>
+
+        You can use the fieldset element to group several controls as well as labels (label) within a web form.
+
+        <form>
+            <fieldset>
+                <legend>Choose your favorite music style</legend>
+
+                <input type="radio" id="javascript" name="language">
+                <label for="javascript">Reggaeton</label><br>
+
+                <input type="radio" id="python" name="language">
+                <label for="python">Trap</label><br>
+
+                <input type="radio" id="java" name="language">
+                <label for="java">Rap</label><br>
+
+                <input type="radio" id="java" name="language">
+                <label for="java">Rock</label><br>
+
+                <input type="radio" id="java" name="language">
+                <label for="java">Reggae</label><br>
+
+                <input type="radio" id="java" name="language">
+                <label for="java">Classic</label><br>
+
+                <input type="radio" id="java" name="language">
+                <label for="java">Techno</label><br>
+
+                <input type="radio" id="java" name="language">
+                <label for="java">Other</label>
+
+            </fieldset>
+        </form>
+
+        <h2 style="color:#FFFFFF">7. Window.opener</h2>
+
+        <p>Pages opened with target="_blank" allow the new page to access the original’s window.opener. This can have
+            security and performance implications. Include rel="noopener" or rel="noreferrer" to prevent this.</p>
+
+        <a href="https://www.w3schools.com" target="_blank" rel="noopener">
+            W3Schools
+        </a>
+
+        <h2 style="color:#FFFFFF">8. Base Element</h2>
+
+        <p>
+            If you want to open all links in the document in a new tab, you can use base element:
+        </p>
+
+
+        <base target="_blank">
+
+        <!-- This link will open in a new tab. -->
+        <div class="wrapper">
+            This link will be opened in a new tab: &nbsp;
+            <a href="https://freecodetools.org/">
+                Free Code Tools
+            </a>
+
+            <p>
+                Read more: <br><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base">
+                    MDN Documentation
+                </a>
+            </p>
+        </div>
+
+        <h2 style="color:#FFFFFF">9. Favicon cache busting</h2>
+
+        <p>
+            To refresh your website’s favicon you can force browsers to download a new version by adding ?v=2 to the
+            filename.
+
+            This is especially helpful in production to make sure the users get the new version.
+        </p>
+
+        <link rel="icon" href="/favicon.ico?v=2">
+
+        <h2 style="color:#FFFFFF">10. The `spellcheck` attribute</h2>
+
+        <p>
+            Use the spellcheck attribute to define whether the element may be checked for spelling errors.
+        </p>
+
+        <label for="input1">spellcheck="hello"</label>
+        <input type="text" id="input1" spellcheck="hello">
+
+        <label for="input2">spellcheck="bye"</label>
+        <input type="text" id="input2" spellcheck="bye">
+
+        <h2 style="color:#FFFFFF">11. Native HTML sliders</h2>
+
+        <p>
+            You can use (input type="range") to create sliders.
+        </p>
+
+        <label for="volume">Volume: </label>
+        <input type="range" id="volume" name="volume" min="0" max="20">
+
+        <label for="result">Your choice: </label>
+        <input type="number" id="result" name="result">
+
+        <h2 style="color:#FFFFFF">12. HTML Accordion</h2>
+
+        <p>You can use the details element to create a native HTML accordion.</p>
+
+        <div class="wrapper">
+            <details>
+                <summary>
+                    Click me to see more details
+                </summary>
+
+                <p>
+                    Hi
+                </p>
+            </details>
+        </div>
+
+        <h2 style="color:#FFFFFF">13. `mark` tag</h2>
+
+        <div class="paragraph">
+            <p>You can use the <code>&lt;mark&gt;</code> tag to highlight text.</p>
+        </div>
+
+        <p>I <mark>really</mark> hate GitHub</p>
+
+        <h2 style="color:#FFFFFF">14. `download` attribute</h2>
+
+        <div class="paragraph">
+            <p>You can use the <code>download</code> attribute in your links to download the file instead of navigating
+                to
+                it.</p>
+        </div>
+
+        <a href="../../How to create a GitHub website.pdf" download="">
+            How to create a GitHub website pdf
+        </a>
+
+
+
+        <h2 style="color:#FFFFFF">15. Performance tip</h2>
+
+        <div class="paragraph">
+            <p>Use the <code>.webp</code> image format to make images smaller and boost the performance of your website.
+            </p>
+        </div>
+
+        <picture>
+            <!-- load .webp image if supported -->
+            <source srcset="logo.webp" type="image/webp">
+
+            <!-- 
+          Fallback if `.webp` images or <picture> tag 
+          not supported by the browser.
+        -->
+            <img src="logo.png" alt="logo">
+        </picture>
+
+        <h2 style="color:#FFFFFF">16. Video thumbnail</h2>
+
+        <div class="paragraph">
+            <p>Use the <code>poster</code> attribute to specify an image to be shown while the video is downloading, or
+                until the user hits the play button.</p>
+        </div>
+
+        <video
+            poster="https://previews.123rf.com/images/yayayoy/yayayoy1607/yayayoy160700013/63970642-it-is-too-small-emoticon-showing-small-size-with-fingers.jpg"
+            width="160" height="260">
+        </video>
+
+        <h2 style="color:#FFFFFF">17. input type="search"</h2>
+
+        <div class="paragraph">
+            <p>Use the <code>type="search"</code> for your search inputs and you get the “clear” button for
+                free.</p>
+        </div>
+
+        <form>
+            <label for="text">Input Type Text</label>
+            <input type="text" id="text" nme="text">
+
+            <label for="search">Input Type Search</label>
+            <input type="search" id="search" nme="search">
+        </form>
+
+        <h2 style="color:#FFFFFF">18. `pre` tag</h2>
+
+        <div class="paragraph">
+            <p>Use the <code>&lt;pre&gt;</code> tag to present preformatted text exactly as written in the HTML file:
+            </p>
+        </div>
+
+        <h3>
+            With pre tag
+        </h3>
+
+        <pre>             .center {
+                display: flex;
+                align-items: center;
+                justify-content: center;   
+            }           
+    </pre>
+
+        <h3>
+            Without pre tag
+        </h3>
+
+        <p>
+            .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            }
+        </p>
+        <div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate"
+            style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: 'Google Sans', Arial, sans-serif;"
+            data-id="">
+            <div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd">
+                <div class=" VIpgJd-yAWNEb-hvhgNd-l4eHX-i3jM8c"><img
+                        src="https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg" width="24" height="24"
+                        alt=""></div>
+                <div class=" VIpgJd-yAWNEb-hvhgNd-k77Iif-i3jM8c">
+                    <div class="VIpgJd-yAWNEb-hvhgNd-IuizWc" dir="ltr">Texto original</div>
+                    <div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div>
+                </div>
+                <div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr">
+                    <div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr">
+                        <div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">Valora esta traducción</div>
+                        <div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">Tu opinión servirá para ayudar a mejorar el Traductor
+                            de Google</div>
+                    </div>
+                    <div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button"
+                            class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Buena traducción" aria-label="Buena traducción"
+                            aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24"
+                                    viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+                                    <path
+                                        d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z">
+                                    </path>
+                                </svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24"
+                                    viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+                                    <path
+                                        d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z">
+                                    </path>
+                                </svg></span></button><button id="goog-gt-thumbDownButton" type="button"
+                            class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Mala traducción" aria-label="Mala traducción"
+                            aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24"
+                                    viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+                                    <path
+                                        d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z">
+                                    </path>
+                                </svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24"
+                                    viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+                                    <path
+                                        d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z">
+                                    </path>
+                                </svg></span></button></div>
+                </div>
+                <div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce">
+                    <form id="goog-gt-votingForm" action="//translate.googleapis.com/translate_voting?client=tee"
+                        method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text"
+                            name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl"
+                            id="goog-gt-votingInputTrgLang"><input type="text" name="query"
+                            id="goog-gt-votingInputSrcText"><input type="text" name="gtrans"
+                            id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote">
+                    </form><iframe name="votingFrame" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="VIpgJd-ZVi9od-aZ2wEe-wOHMyf">
+            <div class="VIpgJd-ZVi9od-aZ2wEe-OiiCO"><svg xmlns="http://www.w3.org/2000/svg" class="VIpgJd-ZVi9od-aZ2wEe"
+                    width="96px" height="96px" viewBox="0 0 66 66">
+                    <circle class="VIpgJd-ZVi9od-aZ2wEe-Jt5cK" fill="none" stroke-width="6" stroke-linecap="round"
+                        cx="33" cy="33" r="30"></circle>
+                </svg></div>
+        </div><iframe frameborder="0" class="VIpgJd-ZVi9od-xl07Ob-OEVmcd skiptranslate"
+            title="Widget de idiomas del Traductor"
+            style="visibility: visible; box-sizing: content-box; width: 1164px; height: 263px; display: none;"></iframe><iframe
+            frameborder="0" class="VIpgJd-ZVi9od-xl07Ob-OEVmcd skiptranslate" title="Widget de idiomas del Traductor"
+            style="visibility: visible; box-sizing: content-box; width: 235px; height: 69px; display: none;"></iframe>
+    </body>
+
+    </html>
