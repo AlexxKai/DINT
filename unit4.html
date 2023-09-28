@@ -10,94 +10,174 @@
     <meta name="author" content="Alex Urueña">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <!--font-family: 'Black Ops One', cursive;-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Materialize Icons-->
+    <link rel="icon" type="image/x-icon" href="./images/fantasma.png">
+    <!--Icon -->
 </head>
 
-<body>
+<body style="background-color: gray; font-family: 'Alex Brush', cursive;">
     <header>
-
-        <nav>
-            <div>
-
-            </div>
-            <div>
-
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a href="./index.html"><img src="./images/fantasma.png" alt="ghost" width="30" height="24"
+                        class="d-inline-block align-text-top"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./unit0.html">Unit 0</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./unit1.html">Unit 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./unit2.html">Unit 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./unit3.html">Unit 3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./unit5.html">Unit 5</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./unit6.html">Unit 6</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
-
     <section>
         <article>
-            <div>
-
+            <div class="container" style="background-color: rgb(177, 173, 173);">
+                <!--accordion start-->
+                <div class="accordion" id="accordionExample">
+                    <h1>Unit 4: Interactive Content Integration</h1>
+                    <br>
+                    <!--First item accordion-->
+                    <div class="accordion-item">
+                        <!--Button-->
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button btn btn-danger" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Documentation
+                            </button>
+                        </h2>
+                        <!--Content-->
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body" style="background-color: rgb(113, 85, 139);">
+                                <!--Row into the accordion body-->
+                                <div class="row">
+                                    <!--Card-->
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <ul>
+                                                <li>No content for the moment</li>
+                                            </ul>
+                                            <div class="collapse multi-collapse" id="godric">
+                                                <iframe src="./img/gryffindor.jpg" alt="gryffindor shield" width="250"
+                                                    height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Close card-->
+                                </div>
+                                <!--Close row-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--Close first item accordion-->
+                    <!--Second item accordion-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button btn btn-warning collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                Assignments
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body" style="background-color: rgb(113, 85, 139);">
+                                <!--Row into the accordion body-->
+                                <div class="row">
+                                    <!--Card-->
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <ul>
+                                                <li>No content for the moment</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--Close card-->
+                                </div>
+                                <!--Close row-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--Third item accordion-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button btn btn-success collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                Tools
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body" style="background-color: rgb(113, 85, 139);">
+                                <!--Row into the accordion body-->
+                                <div class="row">
+                                    <!--Card-->
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <ul>
+                                                <li>No content for the moment</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--Close card-->
+                                </div>
+                                <!--Close row-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div>
-
+            <br>
             </div>
-
-            <div>
-
-            </div>
-        </article>
-
-        <article>
-            <div>
-
-            </div>
-
-            <div>
-
-            </div>
-
-            <div>
-
-            </div>
-        </article>
-
-        <article>
-            <div>
-
-            </div>
-
-            <div>
-
-            </div>
-
-            <div>
-
-            </div>
-        </article>
-
-        <article>
-            <div>
-
-            </div>
-
-            <div>
-
-            </div>
-
-            <div>
-
-            </div>
+            <br>
         </article>
     </section>
 
-    <footer>
-        <div>
-
-        </div>
-        <div>
-
-        </div>
-        <div>
-
+    <footer style="background-color: #2c2c2c;">
+        <div class="d-flex justify-content-center">
+            <i class="material-icons" style="color: #FFFFFF; text-align: center;padding-top: 1%;">copyright</i>
+            <i class="material-icons" style="color: #FFFFFF; text-align: center;padding-top: 1%;">attribution</i>
+            <h5 style="color: #FFFFFF; text-align: center;padding: 1%; font-family: 'Black Ops One', cursive;">Alex
+                Urueña</h5>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
