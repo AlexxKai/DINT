@@ -94,7 +94,7 @@
 
                     <label for="value3">High</label>
                     <meter id="value3" min="0" max="100" low="30" high="75" optimum="80" value="80"></meter>
-<br><br>
+                    <br><br>
                     <h2 style="color:#FFFFFF">5. HTML Native Search</h2>
 
                     <div>
@@ -165,13 +165,11 @@
                     <div class="wrapper">
                         This link will be opened in a new tab: &nbsp;
                         <a href="https://freecodetools.org/">
-                            Free Code Tools
-                        </a>
+                            Free Code Tools</a>
 
                         <p>
                             Read more: <br><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base">
-                                MDN Documentation
-                            </a>
+                                MDN Documentation</a>
                         </p>
                     </div>
 
@@ -205,11 +203,23 @@
                         You can use (input type="range") to create sliders.
                     </p>
 
-                    <label for="volume">Volume: </label>
-                    <input type="range" id="volume" name="volume" min="0" max="20">
+                    <form>
+                        <label for="volume">Volume: </label>
+                        <input type="range" id="volume" name="volume" min="0" max="20">
 
-                    <label for="result">Your choice: </label>
-                    <input type="number" id="result" name="result">
+                        <label for="result">Your choice: </label>
+                        <input type="number" id="result" name="result">
+                    </form>
+
+                    <script>
+                        const volume = document.getElementById('volume');
+                        const result = document.getElementById('result');
+                        result.value = volume.value;
+
+                        volume.addEventListener('change', () => {
+                            result.value = volume.value;
+                        });
+                    </script>
 
                     <h2 style="color:#FFFFFF">12. HTML Accordion</h2>
 
@@ -220,14 +230,15 @@
                             <summary>
                                 Click me to see more details
                             </summary>
-
                             <p>
-                                Hi
+                                Let´s go!
                             </p>
                         </details>
+                        <br>
+
                     </div>
 
-                    <h2 style="color:#FFFFFF">13. `mark` tag</h2>
+                    <h2 style="color:#FFFFFF">13. "mark" tag</h2>
 
                     <div class="paragraph">
                         <p>You can use the <code>&lt;mark&gt;</code> tag to highlight text.</p>
@@ -235,20 +246,16 @@
 
                     <p>I <mark>really</mark> hate GitHub</p>
 
-                    <h2 style="color:#FFFFFF">14. `download` attribute</h2>
+                    <h2 style="color:#FFFFFF">14. "download" attribute</h2>
 
                     <div class="paragraph">
                         <p>You can use the <code>download</code> attribute in your links to download the file instead of
-                            navigating
-                            to
-                            it.</p>
+                            navigating to it.</p>
                     </div>
 
-                    <a href="../../How to create a GitHub website.pdf" download="">
+                    <a href="./documents/Github.pdf" download="">
                         How to create a GitHub website pdf
                     </a>
-
-
 
                     <h2 style="color:#FFFFFF">15. Performance tip</h2>
 
